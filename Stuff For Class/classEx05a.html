@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Class Exercise 6b</title>
+  <style>
+    ul {
+      background-color: #797474;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    li,
+    a {
+      display: block;
+      color: white;
+      padding: 16px;
+    }
+
+    li a:hover {
+      background-color: #111111;
+    }
+
+    li {
+      float: left;
+    }
+
+    #outerDiv {
+      margin: 0 auto;
+      width: 75%;
+      overflow: hidden;
+    }
+
+    #innerDivBodyLeft,
+    #innerDivBodyRight {
+      float: left;
+      height: 500px;
+    }
+
+    #innerDivBodyLeft {
+      background-color: rgb(45, 177, 166);
+      width: 20%;
+    }
+
+    #innerDivBodyRight {
+      background-color: blue;
+      width: 80%;
+    }
+  </style>
+  <script>
+    function changeText(txt) {
+      //alert(txt);
+      document.getElementById('innerDivBodyLeft').innerHTML = 
+      "<a href='#' onclick='newFunction()'> New Link</a>" + 
+      "<a href='#' onclick='newFunction(\"Monkeys are fun\")'> New Link</a>";
+      document.getElementById('innerDivBodyRight').innerHTML = "Some New Text";
+    }
+    function newFunction(txt) {
+      alert(txt)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Middle</h1>
+  <div id='outerDiv'>
+    <div>
+      <ul>
+        <li>
+          <a href="#" onclick='changeText()'>Link 1</a>
+        </li>
+        <li>
+          <a href="#">Link 2</a>
+        </li>
+      </ul>
+    </div>
+    <div id='innerDivBodyLeft'>
+      <h4>Links</h4>
+      <hr>
+      <br>
+      <a href='#' class'divleft' onclick='newFunction("Course")'>Course Info</href>
+      <a href='#' class'divleft' onclick='newFunction("Goals")'>Goals</href>
+      <a href='#' class'divleft' onclick='newFunction("Stuff")'>Stuff Here</href>
+    </div>
+    <div id='innerDivBodyRight'>
+      <p id='textDivRight'>Content goes here when link is clicked</p>
+    </div>
+  </div>
+</body>
+
+</html>

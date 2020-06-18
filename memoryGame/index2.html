@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript Basics</title>
+    <!-- <script src="index.js"></script> -->
+    <!-- <script src="./index.js"></script> -->
+    <link rel="stylesheet" href="./flipCardStyles.css">
+
+</head>
+<body>
+    <div class="center">
+
+        <!-- Header/Contol Selection Start -->
+        <header>
+            <h3 class="center">Flash Cards</h3>
+        </header>
+        <!-- Header/Contol Selection End -->
+
+        <!-- Category Selector Start -->
+        <section id="chooseCat" class="center, margin">
+            <select id="category">
+                <option value="greetings">Greetings</option>
+                <option value="bodyParts">Body Parts</option>
+                <option value="colors">Colors</option>
+            </select>
+        </section>
+        <!-- Category Selector End -->
+
+        <!-- Image Display Start -->
+
+        <!-- 
+        <div>
+            <div>
+                -->
+
+                <section id="targetImg" class="center, margin">
+                    <img src="" alt="">
+                </section>
+
+        <!--
+            </div>
+        </div>
+                 -->
+
+        <!-- Image Display End -->
+
+        <!-- Flip Button Start -->
+        <section id="pagination" class="center margin">
+            <a href="#">
+                <section id="prevWord" class="pgBtn center margin">
+                    <p id="prev"><<</p>
+                </section>
+            </a>
+            <a href="#">
+                <section onclick="alert('clicked')" id="flipWord" class="pgBtn center margin">
+                    <p id="flip">Flip</p>
+                </section>
+            </a>
+            <a href="#">
+                <section id="nextWord" class="pgBtn center margin">
+                    <p id="next">>></p>
+                </section>
+            </a>
+        </section>
+        <!-- Flip Button End -->
+        
+        <!-- Language Selection Start -->        
+        <section id=swapLangBtn class="center, margin">
+            <select id="target1">
+                <option value="English">English</option>
+                <option value="Swahili">Swahili</option>
+            </select>&nbsp;
+            <input type="button" value="<=>" onclick="swapTargets();">&nbsp;
+            <select id="target2">
+                <option value="English">English</option>
+                <option value="Swahili">Swahili</option>
+            </select>
+        </section>
+        <!-- Language Selection End --> 
+
+    </div>
+    
+</body>
+</html>

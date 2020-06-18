@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flash Cards</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="center" id="main">
+    <!-- Header Section-->
+    <header>
+      <h3 class="center">Flash Card</h3>
+    </header>
+    <!-- Header Section-->
+
+    <!-- Category Section-->
+    <section id="chooseCat" class="center margin">
+      <select id="category" onchange="chgLst(this)">
+        <option value="greetings">Greetings</option>
+        <option value="bodyParts">Body Parts</option>
+        <option value="colors">Colors</option>
+      </select>
+    </section>
+    <!-- Category Section-->
+
+    <!-- iamge Section-->
+    <section id="targetImg" class="center margin">
+      <img src="" alt="">
+      <div id="wrd" class="trgWrd"></div>
+    </section>
+    <!-- image Section-->
+
+    <!-- flip button Section-->
+    <section id="pagination" class="center margin">
+      <a href="#">
+        <section id="prevWord" class="pgBtn center margin">
+          <p id="prev" onclick="prvWrd()"><<</p>
+        </section>
+      </a>
+      <a href="#">
+        <section id="flipWord" class="pgBtn center margin">
+          <p id="flip" onclick="flipWrd()">Flip</p>
+        </section>
+      </a>
+      <a href="#">
+        <section id="nextWord" class="pgBtn center margin">
+          <p id="next" onclick="nxtWrd()">>></p>
+        </section>
+      </a>
+
+    </section>
+    <!-- flip button Section-->
+
+    <!-- lang select Section-->
+    <section id="swapLangBtn" class="center margin">
+      <select id="target1" onchange="setList(this)">
+        <option value="English">English</option>
+        <option value="Swahili">Swahili</option>
+      </select>
+      <input id="swapBtn" type="button" value="<=>" onclick="swapTargets()">
+      <select id="target2" onchange="setList(this)">
+        <option value="English">English</option>
+        <option value="Swahili">Swahili</option>
+      </select>
+    </section>
+    <!-- lang section Section-->
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>

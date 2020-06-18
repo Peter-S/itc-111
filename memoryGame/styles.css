@@ -1,0 +1,23 @@
+div {
+    margin: 0 auto;
+}
+.row{
+    width: max-content;
+    overflow: hidden;
+}
+.panel {
+    background-color: #111;
+    box-shadow: inset 0px 0px 1px 1px red;
+    display: table-cell;
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    color: yellow;
+    cursor: pointer;
+}
+.panel:hover{
+    background-color: green;
+}

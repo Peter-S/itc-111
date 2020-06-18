@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>class Ex 05</title>
+  <style>
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: burlywood;
+    }
+  </style>
+  <script>
+    function clickFunction() {
+      // alert('Reached')
+      document.getElementById('innerDivBodyLeft').innerHTML = "newText"
+    }
+    function clickFunction1() {
+      // alert('Reached')
+      document.getElementById('innerDivBodyLeft').innerHTML = "Other Text"
+    }
+  </script>
+</head>
+<body>
+  <div id='outerDiv'>
+    <div id='innerDivHead'>
+      <ul>
+        <li>
+          <a href="#" onclick="clickFunction()">link 1</a>
+        </li>
+        <li>
+          <a href="#" onclick="clickFunction1()">link 2</a>
+        </li>
+      </ul>
+    </div>
+    <div id='innerDivBodyLeft'>Content</div>
+    <div id='innerDivBodyRight'></div>
+
+
+  </div>
+</body>
+</html>
