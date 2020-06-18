@@ -102,7 +102,7 @@ function setList(trg) {
       }else {
         trgLst = greetings_Sw
       }
-      // word.innerHTML = trgLst[ndx]
+      word.innerHTML = trgLst[ndx]
       break
   }
 }
